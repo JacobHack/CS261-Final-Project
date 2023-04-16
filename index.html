@@ -1,78 +1,82 @@
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2048 Software Development Final Project</title>
+    <style>
 
-	<title>2048 Software Development</title>
-	
-	<style type="text/css" media="screen">
-	
-		body {
-			line-height: 140%;
-			width: 800px;
-			counter-reset: h1counter;
-			margin: auto;
-		}
-		code {font-size: 120%;}
-		
-		
-		pre code {
-			background-color: #00bfb2;
-			color: #000000;
-			
-			display: block;
-			padding: 20px;
-		}
-		
-		.centered {
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-    		h1 {
-        		counter-reset: h2counter;
-    			}
-    		h2 {
-        		counter-reset: h3counter;
-   			 }
-    		h2:before {
-        		content: counter(h2counter) ".\0000a0\0000a0";
-        		counter-increment: h2counter;
-   			 }
-    		h3:before {
-        		content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
-        		counter-increment: h3counter;
-			}
-		
-	</style>
-	
-</head>
-	
+      body {
+        background-color: #bcac9eff;
 
+      }
 
-<body bgcolor="000000" text="00bfb2">
-	<h1> D&D Spell Schools Analysis </h1>
-	<p> Counts and compares the number of each spell in D&D 5th edition </p>
-	<center>
-	<img src="spells.png" height=640px>
-	</center>
-	<h2>The codes that generats the visualization</h2>
-	<pre><code>
-        df = pd.read_csv('dnd-spells.csv', index_col=0)
+      h1 {
+        background-color: #ccc1b2ff;
+        color: #7c746b;
+        border-radius: 5px;
+
+      }
+
+      p {
+        background-color: #ccc1b2ff;
+        color: #7c746b;
+        border-radius: 5px;
+      }
+
+      h2 {
+
+        background-color: #ccc1b2ff;
+        color: #7c746b;
+        border-radius: 5px;
+      }
+
+      pre code {
+        background-color: #ccc1b2ff;
+        color: #7c746b;
+        border-radius: 5px;
+        
+      }
 
 
 
 
-        plt.rcParams['figure.figsize'] = [10, 10]
-        plt.rcParams['figure.dpi'] = 200
-        plt.style.use("dark_background")
-        sns.set_style('whitegrid')
-        p = sns.countplot(x='school', data=df, palette="mako")
-        for tick_label in p.get_yticklabels():
-        tick_label.set_color("white")
-        for tick_label in p.get_xticklabels():
-        tick_label.set_color("white")
-        p.get_figure().savefig("spells.png",bbox_inches='tight',transparent=False)
+    </style>
+  </head>
+  <body>
+		<center>
+        <h1>2048 Software Development Final Project</h1>  
+	  	</center>
+        <h2>What is 2048?</h2>
+        
+        <img src="2048_logo.png">
 
-	</code></pre>
-	
-</body>
+        <p>2048 is a single-player sliding tile puzzle video game written by Italian web developer Gabriele Cirulli and published on GitHub. 
+            The objective of the game is to slide numbered tiles on a grid to combine them to create a tile with the number 2048; 
+            however, one can continue to play the game after reaching the goal, creating tiles with larger numbers</p>
+        
+        <h2>What are we changing?</h2>
+        
+        <p>2048 works by generating a 2 or 4 tile in a random open spot on the board everytime you make a move. Currently in the game the generation is essentially random. Our goal is to design an AI to always place the tile in the most difficult location possible. This will in theory make the game much more challenging than it currently is and create a fun new experience for players.</p>
+        
+        <h2>The process for creating the AI</h2>
+        
+        <h2>The code</h2>
+        <pre><code>
+        
+        Insert Code Here
+        
+        </code></pre>
+        
+        <h2>The finished project</h2>
+        
+        <a href = "2048.html">Play the Game Here!</a>
+        
+        <h2>The Team</h2>
+
+        <p>M Caputo, Sam Jeffe, Trey Allen, Jacob Plax</p>
+  
+  </body>
+</html>
+
